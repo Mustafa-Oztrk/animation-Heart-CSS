@@ -1,0 +1,46 @@
+body{background-color: black;}
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 160px;
+    animation: kalp 0.9s ease-in-out infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.heart::before {
+    border-radius: 50%;
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    border-radius: 50%;
+    top: 0;
+    left: 50px;
+}
+
+
+@keyframes kalp{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+        
+    }
+
+   
+}
